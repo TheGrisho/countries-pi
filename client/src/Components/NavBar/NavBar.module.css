@@ -1,0 +1,101 @@
+.navBarConteiner{
+    background-color: #f5b270;
+    display:inline-flex;
+    width: 100%;
+    height: 100%;
+    align-items:center;
+    justify-content: space-around;
+    padding-bottom: 1.5px;
+    position: relative;
+  
+}
+
+.navContent{
+    justify-content: space-around ;
+    display: inline-flex;
+    width: 100%;
+}
+
+
+.navLink{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem ;
+}
+
+.Logo{
+    content: url("../imgs/DALL·E\ 2023-03-20\ 18.16.19\ -\ make\ a\ logo\ with\ a\ earth\ and\ planes\ .png");
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 30px;
+    position: relative;
+    display: inline-block;
+}
+.conteinerMerch{
+    color: #ffffff;
+    text-align: center;
+    margin-left: 2%;
+    width: 20%;
+}
+
+.countries{
+color: white; /* Color del texto */
+font-size: 24px; /* Tamaño de la fuente del texto */
+position: absolute;
+top: 20%;
+left: 4.5%;
+transform: translate(-50%, -50%); /* Para centrar el texto */
+z-index: 1; /* Asegura que el texto está sobre la imagen */
+text-align: center; 
+text-decoration: none; /* Elimina el subrayado */
+    
+}
+.credits{
+    color: white; /* Color del texto */
+    font-size: 24px; /* Tamaño de la fuente del texto */
+    position: absolute;
+    top: 75%;
+    left: 16%;
+    transform: translate(-50%, -50%); /* Para centrar el texto */
+    z-index: 1; /* Asegura que el texto está sobre la imagen */
+    text-align: center; 
+    text-decoration: none; /* Elimina el subrayado */
+    
+}
+/* .NavBarContainer{
+    background-color: #edd5c5;
+    border-color: #1c3166;
+    height:70px;
+    display:flex;
+    align-items:flex-start;
+}
+.Logo{
+    content: url("../imgs/DALL·E\ 2023-03-20\ 18.16.19\ -\ make\ a\ logo\ with\ a\ earth\ and\ planes\ .png");
+    width: 50px;
+    height: 50px;
+   margin: 10px;
+    border-radius: 30px;
+}
+.creditsContainer{
+    list-style-type: none;
+    
+    padding: 0;
+    overflow: hidden;
+}
+.link{
+   
+        color: white;
+        text-decoration: none;
+        font-size: 2rem ;
+    
+}
+.navCountry{
+   margin-top: 10px;
+    font-size: 20px;
+}
+.SearchContainer{
+    justify-content: space-around ;
+    display: inline-flex;
+    width: 100%;
+} */

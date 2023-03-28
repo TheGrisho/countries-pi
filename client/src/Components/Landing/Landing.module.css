@@ -1,0 +1,45 @@
+.landing {
+    background-image: url("../imgs/R.jpg");
+    background-position: center center;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+  }
+
+  .Title {
+    color: #cc982a;
+    margin-left: 40px;
+    font-size: 4rem;
+  
+    
+  }
+
+  .SubTitle {
+    color: #ffc55f;
+    margin-top: 10rem;
+    margin-left: -20%;
+    font-size: 2.5rem;
+  }
+
+  .Button {
+    background-color: #b7833a;
+    position: absolute;
+    top: 45%;
+    left: 38%;
+    color: white;
+    padding: 20px 40px;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+  }
+  .Button:hover{
+    background-color: #352504;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  }
