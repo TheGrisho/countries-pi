@@ -1,7 +1,7 @@
 .activityListContainer {
   display: flex;
   flex-direction: column;
-  background-color: hsl(256, 87%, 12%);
+  background-image: url("../imgs/R.jpg");
   min-height:100%;
   width: 100%;
   position: absolute ;
@@ -24,7 +24,8 @@
   border: solid 1px white;
   display: flex;
   width: 50%;
-  height: 15rem;
+  height: 50%;
+  align-items: center;
 }
 
 .h3Activity {

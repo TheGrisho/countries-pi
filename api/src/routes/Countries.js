@@ -1,7 +1,7 @@
 const { Router } = require('express')
 const router = Router();
 const { Country, Activity } = require('../db.js');
-const { getDbInfo } = require("../Controllers/getApiInfo.js")
+const { getDbInfo } = require("../Controllers/infoApi.js")
 //pendientes:
 //starwith=empieza con para las req...googlear      
 //  uso  normalize googlea
@@ -21,8 +21,6 @@ const matches=(countryName, requestName)=>{
 router.get('/', async (req, res) => {
     const {name} = req.query
     let countriesTotal = await getDbInfo();
-    
-    
     if (name) {
         let countryName = await countriesTotal.filter(el => 
         matches(el.name, name));

@@ -11,9 +11,15 @@
   text-align: center;
   align-items: center;
   padding-bottom: 16px;
-  
+  text-decoration:none; 
+  border-radius: 5px;
+  border-style:solid;
+  border-color: black;
 }
-
+.cardContainer:hover{
+  background-color: #675D50;
+  border-radius: 20px;
+}
 .infoConteiner {
 
   display: flex;

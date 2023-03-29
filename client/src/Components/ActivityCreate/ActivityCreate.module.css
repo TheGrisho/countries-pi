@@ -5,22 +5,25 @@
   align-items: center;
   justify-content: center;
   margin: 0 0 0 0;
+  background-image: url("../imgs/400645.jpg");
 }
 
 .activityCard {
-  background-color: rgba(0, 0, 0, 0.89);
   border-radius: 3px;
-  padding: 70px 100px;
+  padding: 70px 80px;
   color: white;
+  
 }
 
 .titleCreateActivity {
   color: #fff;
   text-transform: uppercase;
-  font-size: 23px;
-  margin: -50px 0 80px 0;
+  font-size: 25px;
+  margin: 50px 0 80px 0;
   display: block;
   text-align: center;
+  background-color: #966B48;
+  border-radius: 10px;
 }
 
 .inputActivities{

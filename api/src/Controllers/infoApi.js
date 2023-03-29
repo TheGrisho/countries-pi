@@ -2,7 +2,7 @@ const { Country, Activity } = require('../db.js');
 const axios = require('axios');
 
 async function getApiInfo() {
-    const apiUrl = await axios.get('https://restcountries.com/v3/all')
+    const apiUrl = await axios.get('https://restcountries.com/v3/all');
     const apiInfo = await apiUrl.data.map((c) => {
         return {
             id: c.cca3,
@@ -15,6 +15,7 @@ async function getApiInfo() {
             population: c.population
         }
     })
+    //cca3:codigode 3 letras, 
     const guardar = () => {
         apiInfo.map(i => {Country.findOrCreate({
                 where: {
@@ -29,7 +30,7 @@ async function getApiInfo() {
                     area: i.area,
                     population: i.population
                 },
-            }).catch((err) => { console.error("trono la base master") });
+            }).catch((err) => { console.error(err) });
         })
     }
     guardar()

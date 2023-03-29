@@ -4,10 +4,10 @@ const router = Router();
 // Configurar los routers
 // Ejemplo: router.use('/auth', authRouter);
 
- const countryRouter= require("./Countries");
+ const countriesRouter= require("./Countries");
 const activityRouter =require("./Activity");
 
-router.use("/countries", countryRouter); 
+router.use("/countries", countriesRouter); 
 router.use("/activity", activityRouter)
 
 

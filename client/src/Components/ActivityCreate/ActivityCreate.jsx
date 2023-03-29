@@ -6,7 +6,7 @@ import { INVIERNO, VERANO, OTOÑO, PRIMAVERA } from "../../const/Const.js";
 import NavBar from "../NavBar/NavBar.jsx";
 import styles from "../ActivityCreate/ActivityCreate.module.css";
 
-
+ let id=0;
 function validate(input) {
   let errors = {};
   if (!input.name) {
@@ -30,6 +30,7 @@ export default function ActivityCreate() {
   const [errors, setErrors] = useState({});
 
   const [input, setInput] = useState({
+    id: 0,
     name: "",
     duration: "",
     difficulty: "",
@@ -75,6 +76,7 @@ export default function ActivityCreate() {
     dispatch(postActivities(input));
     alert("Actividad Creada");
     setInput({
+      id: id++, 
       name: "",
       duration: "",
       difficulty: "",
@@ -100,31 +102,31 @@ export default function ActivityCreate() {
             <div className={styles.inputActivities}>
               <label className={styles.labelActivity}></label>
               <input
-                className="i"
+                className={styles.i}
                 type="text"
                 placeholder="Coloque la Actividad..."
                 value={input.name}
                 name="name"
                 onChange={handleChange}
               />
-              {errors.name && <p className="e">{errors.name}</p>}
+              {errors.name && <p className={styles.e}>{errors.name}</p>}
             </div>
             <div className={styles.inputActivities}>
               <label></label>
               <input
-                className="i"
+                className={styles.i}
                 type="text"
                 value={input.duration}
                 name="duration"
                 placeholder="Coloque la Duracion..."
                 onChange={handleChange}
               />
-              {errors.duration && <p className="e">{errors.duration}</p>}
+              {errors.duration && <p className={styles.e}>{errors.duration}</p>}
             </div>
             <div className={styles.inputActivities}>
               <label> Dificultad </label>
               <input
-                className="i"
+                className={styles.i}
                 type="range"
                 name="difficulty"
                 min="1"
@@ -132,11 +134,11 @@ export default function ActivityCreate() {
                 value={input.difficulty}
                 onChange={(e) => handleChange(e)}
               />
-              {errors.difficulty && <p className="e"> {errors.difficulty}</p>}
+              {errors.difficulty && <p className={styles.e}> {errors.difficulty}</p>}
             </div>
             <div className={styles.seasonInput}>
               <select
-                className="i"
+                className={styles.i}
                 name="season"
                 value={input.season}
                 onChange={(e) => handleChange(e)}
@@ -147,9 +149,9 @@ export default function ActivityCreate() {
                 <option className={styles.op} value={OTOÑO}>Otoño</option>
                 <option className={styles.op} value={PRIMAVERA}>Primavera</option>
               </select>
-              {errors.season && <p className="e">{errors.season}</p>}
+              {errors.season && <p className={styles.e}>{errors.season}</p>}
             </div>
-            {errors.countryId && <p className="e">{errors.countryId}</p>}
+            {errors.countryId && <p className={styles.e}>{errors.countryId}</p>}
 
             <div>
               <select  className={styles.i} onChange={(e) => handleSelect(e)}>

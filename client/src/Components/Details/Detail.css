@@ -1,4 +1,4 @@
-.detaiNav {
+/* .detaiNav {
   background-color: hsl(256, 87%, 12%);
   min-height: 100%;
   width: 100%;
@@ -9,14 +9,14 @@
   flex-direction: column;
   align-content: stretch;
 }
-
+/* 
 .loading {
   display: flex;
   min-height: 100%;
   flex-wrap: wrap;
   font-size: 60px;
-}
-
+} */
+/* 
 .detailContainer {
   width: 100%;
   display: flex;
@@ -61,4 +61,4 @@
     justify-content: flex-start;
     text-align: start;
     margin: 0 5rem;
-}
+} */ 
